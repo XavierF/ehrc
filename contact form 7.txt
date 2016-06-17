@@ -1,0 +1,70 @@
+<fieldset class="form-horizontal">
+<div class="form-group">
+[text* your-name placeholder "Your Name (required)"] 
+</div>
+
+<div class="form-group">
+[email* your-email placeholder "Email (required)"] 
+</div>
+
+
+<div class="form-group">
+[text* text-327 placeholder "City (required)"]
+</div>
+
+<div class="form-group">
+[text* text-376 placeholder "Zip Code (required)"]
+</div>
+
+<div class="form-group">
+[tel* tel-65 placeholder "Phone Number (required)"]
+</div>
+
+<div class="form-group">
+<label class="heading">Number of Bedrooms</label>
+[radio radio-894  use_label_element "1 Room" "2 Rooms" "3 Rooms" "4 Rooms"]
+</div>
+
+<div class="form-group">
+<label class="heading">Number of Bathrooms</label>
+[radio radio-161  use_label_element "1 Bath" "2 Baths" "3 Baths"]
+</div>
+<div class="form-group">
+[text text-724 placeholder "Approximate square footage?"]
+</div>
+
+<div class="form-group">
+<label class="heading">Please understand we want to provide you with the most accurate quote possible, so just be frank when answering this question:</label>
+[radio radio-600 use_label_element "It's a bit messy" "It's a mess"]
+</div>
+
+<div class="form-group">
+<label>Describe areas or rooms you would like us to focus on or tell us about</label>
+[textarea textarea-350 x3]
+</div>
+
+<div class="form-group">
+<label class="heading">Pets?</label>[checkbox checkbox-78 use_label_element "Dog" "Cat"]
+</div>
+
+<div class="form-group">
+<label class="heading">We understand you want to try out our services before committing to regular scheduled cleanings, so what option can we assist you with today:</label>
+[radio radio-105 use_label_element "Move in" "Move out" "One Time"]
+[text text-296 placeholder "other"]
+</div>
+
+<div class="form-group">
+<label class="heading">Additional Services</label>
+[checkbox checkbox-517 use_label_element "Oven" "Fridge" "Windows " "Blinds" "Inside Cabinets" "Laundry"]
+</div>
+
+<div class="form-group">
+<label class="heading">How would you like us to send your quote?</label>
+[radio radio-786 use_label_element "Call you on the phone" "Please send me an Email"]
+</div>
+
+<div class="btn">
+[submit "Send Request"]
+</div>
+
+</fieldset>

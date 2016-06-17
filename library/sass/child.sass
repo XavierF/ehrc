@@ -1,0 +1,405 @@
+//BRAND COLORS Expert HR Consulting
+$white: #FFFFFF
+$lightGrey: #B3A9AF
+$darkGrey: #333333
+$blue: #4A565B
+$lightBlue: 8D9FB5
+$darkBlue: #032C5B
+
+body, html
+	-webkit-font-smoothing: antialiased
+	overflow-x: hidden
+	a
+		color: $darkGrey
+		&:hover
+			color: darkGrey 
+	.home
+
+
+.wrapper
+	min-height: 100%
+	height: auto !important
+	height: 100% !important
+	margin: 0 auto -106px
+
+// HEADER
+.navbar-default
+	background: $darkBlue
+	border-bottom: 0
+	border-radius: 0
+.navbar
+	.container
+		position: relative
+	.navbar-toggle
+		border: none
+		margin-top: 11px
+		border-radius: 2px
+		&:hover, &:active
+			background: rgba(0, 0, 0, .1)
+			outline: none
+		&:focus
+			outline: none
+			background: transparent
+		.icon-bar
+			height: 3px
+			border-radius: 0
+
+	a.navbar-brand
+		line-height: 30px
+		color: white
+		font-weight: 500
+		&:hover
+			background-color: transparent
+	.navbar-nav
+		float: right
+	.navbar-nav
+		li
+			a
+				color: white
+				-webkit-font-smoothing: antialiased
+				padding: 20px 15px
+				font-size: 16px
+				font-weight: 300
+				&:hover
+					color: white
+					background: rgba(0, 0, 0, .1)
+				&:focus
+					color: darken($darkGrey, 10%)
+					background: rgba(0, 0, 0, .1)
+					outline: 0
+			&.active
+				a
+					color: white
+					background: rgba(0, 0, 0, .1)
+					&:hover
+						color: darken($darkGrey, 10%)
+						background: rgba(0, 0, 0, .2)
+					&:focus
+						color: white
+//			&:last-child
+//				a
+//					padding: 20px 0 20px 15px
+
+.content
+	padding: 10px 0 10px 0
+	
+// HERO
+#hero
+	position: relative
+	text-align: center
+
+.tag
+	position: absolute
+	top: 25%
+	left: 0
+	width: 100%
+	z-index: 1000
+	text-align: center
+	h1
+		color: white
+		font-size: 5vw
+		font-weight: 700
+	
+
+
+//PAGE CONTENT
+.home-content
+	position: absolute
+	top: 500px
+	text-align: center
+	width: 100%
+	.page-title
+		color: white
+		margin-bottom: 30px
+.center-block 
+	display: block
+	margin-left: auto
+	margin-right: auto
+	text-align: center
+
+#content
+	-webkit-font-smoothing: antialiased
+	margin-top: 0
+	display: block
+
+#inner-content
+	padding: 10px 0 0 0
+	display: block
+	margin-left: 0
+	margin-right: 0
+
+.article-header
+	margin: 10px 0
+	color: white
+.gallery
+	display: block
+	h3, p
+		color: white
+
+.entry-content
+	-webkit-font-smoothing: antialiased
+	h2
+		color: $darkGrey
+
+#full-width
+	margin-left: -15px
+	margin-right: -15px
+.thumb-container
+	display: block
+	width: 100%
+	border-bottom: 1px solid white
+
+#main-content
+	p
+		font-size: 1.5em
+		font-weight: 200
+		line-height: 1.5em
+		color: darken($darkGrey, 10%)
+		padding: 10px 0
+		background-color: transparent
+		border-top: 0
+		border-bottom: 0
+
+.archive-title, .entry-title, .page-title
+	text-align: center
+	color: white
+	margin: 0
+
+.page-title, .entry-title, .archive-title, .posts-title, .excerpt-read-more
+
+
+
+// FOOTER
+
+.push
+	height: 0
+	float: left
+.footer
+	background: $white
+	margin-top: 0
+	border-top: 0
+	
+.source-org
+	display: inline-block
+	margin-bottom: 0
+	color: white
+.footer-nav
+	display: inline-block
+	float: right
+	margin: 0
+	a
+		color: white
+		padding: 0 10px 0 10px
+
+// MEDIA QUERIES
+@media screen and (max-width:320px)
+	ul.info
+		margin-left: -20px
+		li
+			font-size: 1em
+
+@media screen and (min-width: 320px) and (max-width: 568px)
+	.navbar
+		margin-bottom: 0
+		.container
+			padding: 0
+	a.navbar-brand
+		float: left
+		width: 100%
+		text-align: center !important
+
+	.navbar-toggle
+		position: absolute
+		top: 0
+		right: 0
+
+	body, html
+		.home
+			.row
+				margin-bottom: 10px
+
+	.tag
+		h1
+			font-size: 2em
+			font-weight: 700
+			color: $darkGrey
+			margin-top: 10px
+
+
+
+	#info
+		padding: 0
+
+	.article-header
+		text-align: center
+	.section-header, .page-title
+		font-size: 24px
+	#main-content
+		p
+			font-size: 1.2em
+			line-height: 1.3em
+			font-weight: 200
+			margin: 10px 0
+
+	.entry-content
+		h2
+			font-size: 1.4em
+			margin: 0
+			text-align: center
+
+	.col-md-12
+		h2
+			font-size: 1.2em
+
+	.footer
+		text-align: center
+
+	.footer-nav
+		float: none
+		li
+			display: block
+			text-align: center
+			margin: 10px 0
+
+	.source-org
+		margin-top: 10px
+
+@media screen and (min-width: 320px) and (max-width: 568px) and (orientation : portrait)
+
+#page
+	padding: 0 10px
+
+	body, html
+
+
+	#main
+		padding: 0
+
+
+
+
+@media screen and (max-width: 568px) and (orientation : landscape)
+	body, html
+	
+
+@media screen and (min-width: 569px) and (max-width:767px)
+
+	body, html
+		.home
+			.row
+				margin-bottom: 10px
+			.col-md-3
+				width: 100%
+				background: white
+				color: $darkBlue
+				font-size: 1.2em
+				line-height: 1.3em
+				font-weight: 200
+				margin: 5px 0
+				padding: 10px 
+				min-height: 300px
+			
+			.col-md-7
+				padding: 0 10px
+				width: 50%
+				float: left
+				p
+					font-size: 1.2em
+					line-height: 1.3em
+					font-weight: 200
+					margin: 10px 0
+
+	.entry-content
+		h2
+			text-align: center
+
+
+	.page-title
+		text-align: cente
+
+
+@media screen and (max-width:767px)
+
+	.navbar-default
+		.navbar-toggle
+			.icon-bar
+				background: white
+
+
+	.navbar-collapse
+		float: left
+		width: 105% !important
+		margin-right: 0 !important
+		padding-right: 0
+		padding-left: 0
+
+	.navbar-nav
+		width: 100%
+		text-align: center
+
+	.navbar
+		.navbar-nav
+			li
+				a
+					padding-left: 0
+
+	.mobile-menu
+		padding: 20px 0 0
+		ul
+			margin-left: 0
+			margin-bottom: 0
+			padding-left: 0
+			li
+				margin-bottom: 7px
+				list-style: none
+	
+@media screen and (min-width: 768px) and (max-width:991px) 
+	body, html
+		.home
+			.row
+				margin-bottom: 10px
+			.col-md-7
+				padding: 0 10px
+				width: 50%
+				float: left
+				p
+					font-size: 1.2em
+					line-height: 1.3em
+					font-weight: 200
+					margin: 10px 0
+	ul.info
+		li
+			font-size: 1.2em 
+
+	.container
+		max-width: 97.652% !important
+
+	.col-md-12
+		h2
+			font-size: 1.5em
+
+		
+	.col-md-4
+		display: inline-block
+
+@media screen and (min-width: 768px) and (max-width: 1024px) 
+	
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation : portrait)
+	.page-title
+		text-align: center
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation : landscape)
+	.page-title
+		text-align: center
+
+	
+
+
+@media screen and (max-width: 1199px)
+
+
+@media screen and (min-width: 1200px)
+	.container
+		width: 1024px
