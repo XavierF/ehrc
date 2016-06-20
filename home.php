@@ -9,11 +9,7 @@ homepage of your website.
 */
 ?>
 <?php get_header(); ?>
-<?php
-// The Query
-query_posts('cat=9');
-?>
-<?php remove_filter ('the_content', 'wpautop'); ?>
+
 <section id="hero" role="">
 
 	
@@ -24,7 +20,6 @@ query_posts('cat=9');
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-				<h1 class="tag"><?php $site_description = get_bloginfo( 'description', 'display' ); echo "$site_description";?></h1>
 				
 			</div>
 		</div>
@@ -34,9 +29,5 @@ query_posts('cat=9');
 
 </section>
 
-<script>
-	jQuery(document).ready(function($){
-		$('.carousel').carousel('pause');
-	});
 </script>
 <?php get_footer(); ?>

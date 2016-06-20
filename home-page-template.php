@@ -8,28 +8,12 @@
 ?>
 <?php get_header(); ?>
 <section id="hero" role="hero-unit" class="container-fluid">
-	<div class="container-fluid">
-		
-		<div class="tag">
-			<h1><?php $site_description = get_bloginfo( 'description', 'display' ); echo "$site_description";?></h1>
-		</div><!-- .tag -->
-		<?php if( have_rows('slides') ): ?>
-			<div class="slides">
-				
-				<?php while( have_rows('slides') ): the_row(); 
-				// vars
-						$image = get_sub_field('image');
-						?>
-				<div class="item">
-						<img src="<?php echo $image; ?>"  alt="<?php echo $image['alt'] ?>"  class="img-responsive">
-			  </div><!-- end .item -->
-			<?php endwhile; endif; ?>
-		</div><!-- end .slides-->
+
 </section> <!-- end hero-unit -->
 
 
 <section id="info" class="home-content">
-	<div class="container-fluid">
+	<div class="container">
 		<div class="row">
 				<div class="col-sm-12 col-md-12 col-lg-12" role="main">
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -60,7 +44,7 @@
 							<?php endif; ?>
 			</div> <!-- end .col-sm-12 -->
 		</div><!-- end .row -->
-	</div><!-- .container-fluid -->
+	</div><!-- .container-->
 </section><!-- end .home-content -->
 
 

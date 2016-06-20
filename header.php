@@ -33,6 +33,13 @@
 		<body <?php body_class(); ?>>
 			<div class="wrapper">
 				<header class="header" role="banner" id="top">
+					<div class="container">
+					<div class="banner">
+						<a class="navbar-logo" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"></a>
+						<h1 class="tag"><?php $site_description = get_bloginfo( 'description', 'display' ); echo "$site_description";?></h1>
+								
+					</div><!-- .banner -->
+				</div><!-- .container -->
 					<nav role="navigation">
 						<div class="navbar navbar-default navbar-top">
 							<div class="container">
@@ -43,13 +50,10 @@
 										<span class="icon-bar"></span>
 										<span class="icon-bar"></span>
 									</button>
-									<a class="navbar-brand" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><?php bloginfo( 'name' ) ?></a>
-								
-								<div class="navbar-collapse collapse navbar-responsive-collapse">
+							<div class="navbar-collapse collapse navbar-responsive-collapse">
 									<?php bones_main_nav(); ?>
 								</div><!-- end .navbar-collapse -->
-							
-							</div><!-- end .container -->
+								</div><!-- .container-->
 						</div> <!-- end .navbar navbar-default navbar-fixed-top -->
 					</nav>
 				</header> <!-- end header -->

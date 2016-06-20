@@ -10,19 +10,28 @@ body, html
 	-webkit-font-smoothing: antialiased
 	overflow-x: hidden
 	a
-		color: $darkGrey
+		color: $darkBlue
 		&:hover
 			color: darkGrey 
-	.home
 
-
-.wrapper
-	min-height: 100%
-	height: auto !important
-	height: 100% !important
-	margin: 0 auto -106px
-
+	
 // HEADER
+
+.navbar-logo
+	a.navbar-logo
+	display: inline-block
+	float: left
+	background: url('../images/rtr-logo-300dpi.jpg') center  center no-repeat
+	background-size: contain
+	height: 200px
+	width: 300px
+h1.tag
+	display: inline-block
+	float: right !important
+	width: 600px
+	text-align: center
+	color: $darkBlue
+	font-weight: 600
 .navbar-default
 	background: $darkBlue
 	border-bottom: 0
@@ -43,15 +52,9 @@ body, html
 		.icon-bar
 			height: 3px
 			border-radius: 0
-
-	a.navbar-brand
-		line-height: 30px
-		color: white
-		font-weight: 500
-		&:hover
-			background-color: transparent
+	
 	.navbar-nav
-		float: right
+		float: left
 	.navbar-nav
 		li
 			a
@@ -87,18 +90,9 @@ body, html
 #hero
 	position: relative
 	text-align: center
+	height: 300px
 
-.tag
-	position: absolute
-	top: 25%
-	left: 0
-	width: 100%
-	z-index: 1000
-	text-align: center
-	h1
-		color: white
-		font-size: 5vw
-		font-weight: 700
+
 	
 
 

@@ -10,7 +10,7 @@
 
 <section id="hero" role="hero-unit">
 	<div class="container-fluid">
-		<h1 class="tag"><?php $site_description = get_bloginfo( 'description', 'display' ); echo "$site_description";?></h1>
+		
 	</div>
 </section> <!-- end hero-unit -->
 
