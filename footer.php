@@ -7,18 +7,20 @@
 			<footer class="footer" role="contentinfo">
 
 				<div class="container">
+				</div> <!-- end .container -->
 
 				<div id="inner-footer" class="wrap clearfix">
-				
+					<div class="container">
 					<nav role="navigation">
 							<?php bones_footer_links(); ?>
 					</nav>
 
 					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?></p>
+					</div> <!-- end .container -->
 
 				</div> <!-- end #inner-footer -->
 
-				</div> <!-- end .container -->
+				
 
 			</footer> <!-- end footer -->
 

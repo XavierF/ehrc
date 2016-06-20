@@ -8,14 +8,9 @@
 ?>
 <?php get_header(); ?>
 <section id="hero" role="hero-unit" class="container-fluid">
-
-</section> <!-- end hero-unit -->
-
-
-<section id="info" class="home-content">
-	<div class="container">
-		<div class="row">
-				<div class="col-sm-12 col-md-12 col-lg-12" role="main">
+	<div class="hero-background"></div>
+	
+				<div class="container" role="main">
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 						<header class="article-header">
@@ -42,8 +37,21 @@
 					</article>
 
 							<?php endif; ?>
-			</div> <!-- end .col-sm-12 -->
-		</div><!-- end .row -->
+			</div> <!-- end .container -->
+		
+
+</section> <!-- end hero-unit -->
+
+
+<section id="services" class="home-content">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-md-3"></div>
+			<div class="col-md-3"></div>
+		</row>
+		
 	</div><!-- .container-->
 </section><!-- end .home-content -->
 

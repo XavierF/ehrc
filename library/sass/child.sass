@@ -39,6 +39,7 @@ h1.tag
 	background: $darkBlue
 	border-bottom: 0
 	border-radius: 0
+	margin-bottom: 0
 .navbar
 	.container
 		position: relative
@@ -64,11 +65,12 @@ h1.tag
 				color: white
 				-webkit-font-smoothing: antialiased
 				padding: 20px 15px
-				font-size: 16px
-				font-weight: 300
+				font-size: 1.25em
+				font-family: "Roboto"
+				font-weight: 400
 				&:hover
 					color: white
-					background: rgba(0, 0, 0, .1)
+					background: lighten($darkBlue, 10%)
 				&:focus
 					color: darken($darkGrey, 10%)
 					background: rgba(0, 0, 0, .1)
@@ -76,10 +78,10 @@ h1.tag
 			&.active
 				a
 					color: white
-					background: rgba(0, 0, 0, .1)
+					background: lighten($darkBlue, 10%)
 					&:hover
-						color: darken($darkGrey, 10%)
-						background: rgba(0, 0, 0, .2)
+						color: white
+						background: lighten($darkBlue, 10%)
 					&:focus
 						color: white
 //			&:last-child
@@ -90,23 +92,43 @@ h1.tag
 	padding: 10px 0 10px 0
 	
 // HERO
-#hero
-	position: relative
-	text-align: center
-	height: 300px
-
+.home
 
 	
+#hero
+	height: 580px
+	position-relative
+	text-align: center
+	.article-header
+		display: none
+	.entry-content
+		padding-top: 70px
+		font-family: "Roboto"
+		font-size: 1.8em
+		font-weight: 600
+		line-height: 2
+		color: $darkBlue
 
+		
+.hero-background
+	position: absolute
+	top: 261px
+	left: 0
+	width: 100%
+	height: 600px
+	background: url('../images/bannerImage1.png') center  center no-repeat
+	background-size: cover
+	opacity: 0.4
+	z-index: -1
+	
+	
 
 //PAGE CONTENT
 .home-content
-	position: absolute
-	top: 500px
-	text-align: center
-	width: 100%
+	height: 600px
+
 	.page-title
-		color: white
+		color: $darkBlue
 		margin-bottom: 30px
 .center-block 
 	display: block
@@ -136,7 +158,11 @@ h1.tag
 .entry-content
 	-webkit-font-smoothing: antialiased
 	h2
-		color: $darkGrey
+	img
+		display: inline-block
+		float: left
+		margin-right: 10px
+		margin-bottom: 10px
 
 #full-width
 	margin-left: -15px
@@ -163,6 +189,7 @@ h1.tag
 	margin: 0
 
 .page-title, .entry-title, .archive-title, .posts-title, .excerpt-read-more
+	color: $darkBlue
 
 
 
@@ -172,9 +199,13 @@ h1.tag
 	height: 0
 	float: left
 .footer
-	background: $white
+	background: white
 	margin-top: 0
 	border-top: 0
+	padding: 0
+#inner-footer
+	background: $darkBlue
+
 	
 .source-org
 	display: inline-block
