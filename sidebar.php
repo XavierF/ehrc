@@ -14,5 +14,5 @@
 
 					<?php endif; ?>
 
-				<a class="yelp" href="#">yelp</a>
+		
 				</div><!-- end #sidebar -->

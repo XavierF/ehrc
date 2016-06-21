@@ -7,7 +7,7 @@
  */
 ?>
 <?php get_header(); ?>
-<section id="hero" role="hero-unit" class="container-fluid">
+<section id="hero" role="hero-unit" class="container-fluid clearfix">
 	<div class="hero-background"></div>
 	
 				<div class="container" role="main">
@@ -43,17 +43,37 @@
 </section> <!-- end hero-unit -->
 
 
-<section id="services" class="home-content">
+<section class="services clearfix">
+	<div class="section-header clearfix">
+		<h2>SERVICES</h2>
+	</div>
 
-	<div class="container">
+	<div class="container clearfix">
 		<div class="row">
-			<div class="col-md-3"></div>
-			<div class="col-md-3"></div>
-			<div class="col-md-3"></div>
+			<div class="card col-lg-4">
+				<h4><a href="<?php the_field('service_1_page'); ?>"><?php the_field('service_1_title'); ?></a></h4>
+				<p class="service-excerpt"><?php the_field('service_1_excerpt'); ?></p>	
+				<a href="<?php the_field('service_1_page'); ?>" class="btn btn-primary">LEARN MORE</a>
+			</div>
+
+			<div class="card col-lg-4">
+				<h4><a href="<?php the_field('service_2_page'); ?>"><?php the_field('service_2_title'); ?></a></h4>
+				<p class="service-excerpt"><?php the_field('service_2_excerpt'); ?></p>	
+				<a href="<?php the_field('service_1_page'); ?>" class="btn btn-primary">LEARN MORE</a>
+			</div>
+				
+			
+			<div class="card col-lg-4">
+				<h4><a href="<?php the_field('service_3_page'); ?>"><?php the_field('service_3_title'); ?></a></h4>
+				<p class="service-excerpt"><?php the_field('service_3_excerpt'); ?></p>	
+				<a href="<?php the_field('service_1_page'); ?>" class="btn btn-primary">LEARN MORE</a>
+			</div>
+				
 		</row>
 		
 	</div><!-- .container-->
 </section><!-- end .home-content -->
+<section id="news" class="container"></section>
 
 
 <?php get_footer(); ?>
