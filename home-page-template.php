@@ -26,13 +26,13 @@
 
 					<article id="post-not-found" class="hentry clearfix">
 						<header class="article-header">
-							<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
+							<h1><?php _e( '404 Not Found!', 'bonestheme' ); ?></h1>
 						</header>
 						<section class="entry-content">
-							<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
+							<p><?php _e( 'Page not found please hit the back buttton of your browser and try again.', 'bonestheme' ); ?></p>
 						</section>
 						<footer class="article-footer">
-								<p><?php _e( 'This is the error message in the page.php template.', 'bonestheme' ); ?></p>
+								<p><?php _e( '', 'bonestheme' ); ?></p>
 						</footer>
 					</article>
 
@@ -44,8 +44,8 @@
 
 
 <section class="services clearfix">
-	<div class="section-header clearfix">
-		<h2>SERVICES</h2>
+	<div class="services-section-header clearfix">
+		<h2>OUR KEY SERVICES</h2>
 	</div>
 
 	<div class="container clearfix">
@@ -72,8 +72,18 @@
 		</row>
 		
 	</div><!-- .container-->
-</section><!-- end .home-content -->
-<section id="news" class="container"></section>
+</section><!-- end services -->
+
+<section id="news" class="container">
+
+	<div class="section-header clearfix">
+		<h2>HUMAN RESOURCES IN THE NEWS</h2>
+	</div>
+	<div class="container" role-"news">
+		<!-- begin news feed here -->
+	</div>
+	
+</section><!-- end news -->
 
 
 <?php get_footer(); ?>

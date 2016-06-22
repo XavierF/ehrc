@@ -13,7 +13,7 @@ body, html
 	a
 		color: $darkBlue
 		&:hover
-			color: darkGrey 
+			color: lighten ($darkBlue, 10%)
 
 	
 // HEADER
@@ -134,7 +134,7 @@ h1.tag
 	.row
 		margin-top: -80px
 
-.section-header
+.services-section-header
 	h2
 		margin: -170px 0 20px
 		text-align: center
@@ -142,7 +142,6 @@ h1.tag
 		color: $darkBlue
 		font-family: "Roboto"
 		font-weight: 700
-
 
 .card
 	height: 300px
@@ -164,6 +163,14 @@ h1.tag
 	&:nth-child(3)
 		float: right
 	
+.section-header
+	margin-top: 20px
+	h2
+		text-align: center
+		padding: 10px 0
+		color: $darkBlue
+		font-family: "Roboto"
+		font-weight: 700
 	
 
 //PAGE CONTENT
@@ -256,10 +263,10 @@ h1.tag
 
 .archive-title, .entry-title, .page-title
 	text-align: center
-	color: white
+	color: $darkBlue
 	margin: 0
 
-.page-title, .entry-title, .archive-title, .excerpt-read-more
+.page-title, .archive-title, .excerpt-read-more
 	color: $darkBlue
 	margin: 20px 0
 
@@ -268,11 +275,20 @@ h1.tag
 	.entry-content
 		padding: 0 30px 0 10px
 
+.single
+	.entry-content
+		padding: 10px 30px 0 10px
+
 .posts-title
 	margin: 20px 0 0
+	color: $darkBlue
+
+.entry-title
+	margin: 40px 0 0 0
+	color: $darkBlue
+	text-align: left
 .article-footer
 	padding-left: 10px
-
 
 
 // FOOTER
