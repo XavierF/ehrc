@@ -6,7 +6,7 @@
 
 				<div id="inner-content" class="wrap clearfix">
 
-					<div id="main" class="clearfix" role="main">sup?
+					<div id="main" class="clearfix" role="main">
 
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -15,7 +15,7 @@
 
 								<header class="article-header">
 
-									<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
+									<h3 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h3>
 								
 
 								</header> <!-- end article header -->
@@ -37,25 +37,25 @@
 
 							<article id="post-not-found" class="hentry clearfix">
 									<header class="article-header">
-										<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
+										<h1><?php _e( 'Post Not Found!', 'bonestheme' ); ?></h1>
 									</header>
 									<section class="entry-content">
-										<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
+										<p><?php _e( 'please hit the back button of your browser', 'bonestheme' ); ?></p>
 									</section>
 									<footer class="article-footer">
-											<p><?php _e( 'This is the error message in the single.php template.', 'bonestheme' ); ?></p>
+											<p><?php _e( '', 'bonestheme' ); ?></p>
 									</footer>
 
-							<?php if( have_rows('gallery') ): ?>
 			
 							</article>
 
 						<?php endif; ?>
 
 					</div> <!-- end #main -->
+					<?php get_sidebar(); ?>
 
 				</div> <!-- end #inner-content -->
-
+	
 			</div> <!-- end #content -->
 
 		</div> <!-- end .container -->

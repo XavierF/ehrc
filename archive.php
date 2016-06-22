@@ -50,7 +50,7 @@
 
 								<header class="article-header">
 
-									<h4 class="posts-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>
+									<h3 class="posts-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
 
 								</header> <!-- end article header -->
 
@@ -60,55 +60,16 @@
 
 								</section> <!-- end article section -->
 
+					
 								<footer class="article-footer">
-
+									<?php the_tags( '<p class="tags"><span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ' ', '</p>' ); ?>
 								</footer> <!-- end article footer -->
+								<hr>
 
 							</article> <!-- end article -->
 
+
 							<?php endwhile; ?>
-
-							<?php if( have_rows('gallery') ): ?>
-					<div class="gallery" role="image-gallery">
-					<?php 
-					// loop through rows (parent repeater)
-					while( have_rows('gallery') ): the_row(); 
-							//vars
-								$header = get_sub_field('header'); 
-								?>
-						<div class="thumb-container">
-							
-							
-							<?php 
-							// check for rows (sub repeater)
-							if( have_rows('thumbs') ): ?>
-								
-				
-								<div class="row">
-									<div class="col-lg-12">
-										<h3><?php echo $header; ?></h3>
-									</div>
-
-								<?php 
-								// loop through rows (sub repeater)
-								while( have_rows('thumbs') ): the_row(); 
-								// vars
-											$image = get_sub_field('image');
-											$caption = get_sub_field('caption');
-									// display each thumb
-									?>
-									<div class="thumb col-sm-3 col-md-6"> 
-										<img src="<?php echo $image; ?>"  alt="<?php echo $caption; ?>"  class="img-responsive">
-										<p><?php echo $caption; ?></p>
-									</div><!-- .thumb -->
-								<?php endwhile; ?>
-								</div><!-- .row -->
-							<?php endif; //if( get_sub_field('thumbs') ): ?>
-						</div><!-- .thumb-container -->
-
-					<?php endwhile; // while( has_sub_field('gallery') ): ?>
-					</div><!-- .gallery -->
-				<?php endif; // if( get_field('gallery') ): ?>
 
 									<?php if (function_exists("builder_numbered_pages")) { ?>
 									<?php builder_numbered_pages(); ?>
@@ -139,8 +100,7 @@
 							<?php endif; ?>
 
 						</div> <!-- end #main -->
-
-						
+								<?php get_sidebar(); ?>
 
 								</div> <!-- end #inner-content -->
 
