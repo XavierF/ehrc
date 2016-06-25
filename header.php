@@ -34,12 +34,13 @@
 			<div class="wrapper">
 				<header class="header" role="banner" id="top">
 					<div class="container">
+						<div class="row">
 					<div class="banner">
 						<a class="navbar-logo" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"></a>
 						<h1 class="tag"><?php $site_description = get_bloginfo( 'description', 'display' ); echo "$site_description";?></h1>
-								
 					</div><!-- .banner -->
 				</div><!-- .container -->
+			</div><!-- row -->
 					<nav role="navigation">
 						<div class="navbar navbar-default navbar-top">
 							<div class="container">

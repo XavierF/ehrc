@@ -51,22 +51,22 @@
 	<div class="container clearfix">
 		<div class="row">
 			<div class="card col-lg-4">
-				<h4><a href="<?php the_field('service_1_page'); ?>"><?php the_field('service_1_title'); ?></a></h4>
+				<h4 class="card-header"><a href="<?php the_field('service_1_page'); ?>"><?php the_field('service_1_title'); ?></a></h4>
 				<p class="service-excerpt"><?php the_field('service_1_excerpt'); ?></p>	
-				<a href="<?php the_field('service_1_page'); ?>" class="btn btn-primary">LEARN MORE</a>
+				<a href="<?php the_field('service_1_page'); ?>" class="btn btn-primary btn-lg">LEARN MORE</a>
 			</div>
 
 			<div class="card col-lg-4">
-				<h4><a href="<?php the_field('service_2_page'); ?>"><?php the_field('service_2_title'); ?></a></h4>
+				<h4 class="card-header"><a href="<?php the_field('service_2_page'); ?>"><?php the_field('service_2_title'); ?></a></h4>
 				<p class="service-excerpt"><?php the_field('service_2_excerpt'); ?></p>	
-				<a href="<?php the_field('service_1_page'); ?>" class="btn btn-primary">LEARN MORE</a>
+				<a href="<?php the_field('service_1_page'); ?>" class="btn btn-primary btn-lg">LEARN MORE</a>
 			</div>
 				
 			
 			<div class="card col-lg-4">
-				<h4><a href="<?php the_field('service_3_page'); ?>"><?php the_field('service_3_title'); ?></a></h4>
+				<h4 class="card-header"><a href="<?php the_field('service_3_page'); ?>"><?php the_field('service_3_title'); ?></a></h4>
 				<p class="service-excerpt"><?php the_field('service_3_excerpt'); ?></p>	
-				<a href="<?php the_field('service_1_page'); ?>" class="btn btn-primary">LEARN MORE</a>
+				<a href="<?php the_field('service_1_page'); ?>" class="btn btn-primary btn-lg">LEARN MORE</a>
 			</div>
 				
 		</row>
@@ -74,13 +74,18 @@
 	</div><!-- .container-->
 </section><!-- end services -->
 
-<section id="news" class="container">
-
-	<div class="section-header clearfix">
-		<h2>HUMAN RESOURCES IN THE NEWS</h2>
-	</div>
+<section class="news clearfix">
+	
+	
 	<div class="container" role-"news">
+		<div class="section-header clearfix">
+		<h2>HUMAN RESOURCES IN THE NEWS</h2>
+	</div><!-- .section-header -->
+
 		<!-- begin news feed here -->
+		<?php
+echo do_shortcode( '[wp_rss_aggregator limit="10" links_before=\'<ul class="rss-aggregator">\' link_before=\'<li class="feed-item-link">\']' );
+?>
 	</div>
 	
 </section><!-- end news -->
