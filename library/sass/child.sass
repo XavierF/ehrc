@@ -65,31 +65,35 @@ a.navbar-brand
 	
 	.navbar-nav
 		float: left
-	.navbar-nav
+	.navbar-nav, .dropdown-menu
+		padding: 1px 0 !important
 		li
 			a
 				color: white
 				-webkit-font-smoothing: antialiased
-				padding: 20px 20px
+				padding: 20px 20px !important
 				font-size: 1.25em
 				font-family: "Roboto"
 				font-weight: 400
 				&:hover
-					color: white
-					background: lighten($darkBlue, 10%)
+					color: white !important
+					background: lighten($darkBlue, 10%) !important
 				&:focus
 					color: darken($darkGrey, 10%)
 					background: rgba(0, 0, 0, .1)
 					outline: 0
 			&.active
 				a
-					color: white
-					background: lighten($darkBlue, 10%)
+					color: white !important
+					background: lighten($darkBlue, 10%) !important
 					&:hover
 						color: white
 						background: lighten($darkBlue, 10%)
 					&:focus
 						color: white
+	.caret
+		border-top-color: white !important
+		border-bottom-color: white !important
 
 //			&:last-child
 //				a
@@ -424,7 +428,7 @@ ul.social
 
 
 
-@media screen and (min-width: 321px) and (max-width: 568px)
+@media screen and (min-width: 320px) and (max-width: 568px)
 	.navbar
 		margin-bottom: 0
 		.container
@@ -554,13 +558,8 @@ ul.social
 
 	body, html
 
-
 	#main
 		padding: 0
-
-
-
-
 
 @media screen and (max-width: 568px) and (orientation : landscape)
 	body, html
@@ -629,15 +628,7 @@ ul.social
 				a
 					padding-left: 0
 
-	.mobile-menu
-		padding: 20px 0 0
-		ul
-			margin-left: 0
-			margin-bottom: 0
-			padding-left: 0
-			li
-				margin-bottom: 7px
-				list-style: none
+
 	
 @media screen and (min-width: 768px) and (max-width:991px) 
 	body, html
