@@ -220,6 +220,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/library\/images\/facebook.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 974,
+		"inputAbbreviatedPath": "\/library\/images\/facebook.png",
+		"outputAbbreviatedPath": "\/library\/images\/facebook.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/library\/images\/googleplus.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2038,
+		"inputAbbreviatedPath": "\/library\/images\/googleplus.png",
+		"outputAbbreviatedPath": "\/library\/images\/googleplus.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/library\/images\/linkedin.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1300,
+		"inputAbbreviatedPath": "\/library\/images\/linkedin.png",
+		"outputAbbreviatedPath": "\/library\/images\/linkedin.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/library\/images\/rtr-logo-300dpi.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -227,6 +260,17 @@
 		"initialSize": 90928,
 		"inputAbbreviatedPath": "\/library\/images\/rtr-logo-300dpi.jpg",
 		"outputAbbreviatedPath": "\/library\/images\/rtr-logo-300dpi.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/library\/images\/twitter.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1405,
+		"inputAbbreviatedPath": "\/library\/images\/twitter.png",
+		"outputAbbreviatedPath": "\/library\/images\/twitter.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

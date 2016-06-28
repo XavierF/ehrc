@@ -22,17 +22,16 @@ section
 	
 // HEADER
 
-.navbar-logo
-	a.navbar-logo
-	display: inline-block
-	float: left
+a.navbar-brand
+	display: block
 	background: url('../images/rtr-logo-300dpi.jpg') center  center no-repeat
 	background-size: contain
 	height: 200px
 	width: 300px
-h1.tag
-	display: inline-block
-	float: right !important
+	margin-left: 0 !important
+	margin-right: 0 !important
+.tag
+	display: block
 	width: 645px
 	margin-top: 85px
 	text-align: center
@@ -40,6 +39,8 @@ h1.tag
 	font-family: "Roboto"
 	font-size: 38px
 	font-weight: 600
+	&:nth-word(3)
+		margin-right: 10px
 .navbar-default
 	background: $darkBlue
 	border-bottom: 0
@@ -344,9 +345,13 @@ ul.rss-aggregator
 	margin-top: 0
 	border-top: 0
 	padding: 0
-#contact
+.contact
 	text-align: center
 	padding: 10px 0
+	h3
+		color: $darkBlue
+	a
+		font-size: 1.2em
 ul.phone
 	li
 		display: inline-block
@@ -358,35 +363,73 @@ ul.social
 	background: $darkBlue
 	text-align: center
 	padding: 10px 0
+	a
+		font-size: 1.3em
 
 	
 .source-org
-	margin-bottom: 0
+	margin-bottom: 20px
 	color: white
 .footer-nav
-	display: inline-block
-	float: right
-	margin: 0
+	display: block
+	float: none
+	margin: 20px auto 
 	a
 		color: white
 		padding: 0 10px 0 10px
+		font-size: 1em !important
+.phone
+	padding-left: 0
+
+.social
+	height: 30px
+	padding-left: 0
+	margin-top: 10px
+	.linkedin
+		height: 25px
+		width: 25px
+		margin: 0 15px
+		display: inline-block
+		background: url('../images/linkedin.png') center  center no-repeat
+		background-size: 24px 24px
+
+	.twitter
+		height: 25px
+		width: 25px
+		margin: 0 15px
+		display: inline-block
+		background: url('../images/twitter.png') center  center no-repeat
+		background-size: 24px 24px
+
+	.facebook
+		height: 25px
+		width: 25px
+		margin: 0 15px
+		display: inline-block
+		background: url('../images/facebook.png') center  center no-repeat
+		background-size: 24px 24px
+
+	.googleplus
+		height: 25px
+		width: 25px
+		margin: 0 15px
+		display: inline-block
+		background: url('../images/googleplus.png') center  center no-repeat
+		background-size: 24px 24px
+
 
 // MEDIA QUERIES
-@media screen and (max-width:320px)
-	ul.info
-		margin-left: -20px
-		li
-			font-size: 1em
+@media screen and (max-width: 320px) and (orientation : portrait)
 
-@media screen and (min-width: 320px) and (max-width: 568px)
+
+
+
+@media screen and (min-width: 321px) and (max-width: 568px)
 	.navbar
 		margin-bottom: 0
 		.container
 			padding: 0
-	a.navbar-brand
-		float: left
-		width: 100%
-		text-align: center !important
+
 
 	.navbar-toggle
 		position: absolute
@@ -398,17 +441,80 @@ ul.social
 			.row
 				margin-bottom: 10px
 
+	.header
+		.col-md-4
+			width: 80%
+			margin: 0 auto
+			text-align: center
+	.navbar-brand
+		float: none
+		margin: 0 auto !important
+		width: 100% !important
+
+	.header
+		.col-xs-12
+
+
 	.tag
-		h1
-			font-size: 2em
-			font-weight: 700
-			color: $darkGrey
-			margin-top: 10px
+		font-size: 1.5em !important
+		font-weight: 500 !important
+		margin-top: 0 !important
+		margin: 0 auto
+		width: 100% !important
+
+	#hero
+		height: auto !important
+		.entry-content 
+			p
+				font-size: 1.4em
+				font-weight: 500
+				line-height: 1.2em
+				padding: 10px 0 15px
+				text-align: left 	!important
+
+	.hero-background
+		max-height: auto
 
 
 
-	#info
-		padding: 0
+	.services
+		margin-bottom: 10px !important
+		height: auto !important
+		display: block
+		.container
+			width: 100% !important
+			padding: 0 10px !important
+		.row
+			margin-top: 0 !important
+			margin-left: 0
+			margin-right: 0
+	.services-section-header
+		h2
+			margin: 0 
+
+	.card
+		height: auto !important
+		width: auto !important
+		margin: 10px 0 !important
+		padding: 10px
+		text-align: center
+		background: white
+		font-family: "Roboto"
+		font-size: 1.2em
+		font-weight: 300
+		border-radius: 3px
+		p
+			text-align: left
+			font-size: 1.2em
+			font-family: "Roboto"
+			font-weight: 500
+			margin-bottom: 30px
+		&:nth-child(2)
+			margin: 0
+		&:nth-child(3)
+			float: none
+		.btn
+			margin-bottom: 10px
 
 	.article-header
 		text-align: center
@@ -454,6 +560,7 @@ ul.social
 
 	#main
 		padding: 0
+
 
 
 
@@ -535,32 +642,7 @@ ul.social
 	
 @media screen and (min-width: 768px) and (max-width:991px) 
 	body, html
-		.home
-			.row
-				margin-bottom: 10px
-			.col-md-7
-				padding: 0 10px
-				width: 50%
-				float: left
-				p
-					font-size: 1.2em
-					line-height: 1.3em
-					font-weight: 200
-					margin: 10px 0
-	ul.info
-		li
-			font-size: 1.2em 
-
-	.container
-		max-width: 97.652% !important
-
-	.col-md-12
-		h2
-			font-size: 1.5em
-
-		
-	.col-md-4
-		display: inline-block
+	
 
 @media screen and (min-width: 768px) and (max-width: 1024px) 
 	
@@ -574,7 +656,22 @@ ul.social
 	.page-title
 		text-align: center
 
-	
+@media screen and (min-width: 768px) and (max-width: 991px)
+	.header
+		.col-md-4
+			text-align: center
+			margin: 0 auto
+			width: 50%
+
+	a.navbar-brand
+		width: auto
+		max-height: 200px
+		margin: 10px auto 0
+		float: none
+		text-align: center
+
+	h1.tag
+		margin: 10px auto
 
 
 @media screen and (max-width: 1199px)

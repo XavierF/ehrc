@@ -35,12 +35,16 @@
 				<header class="header" role="banner" id="top">
 					<div class="container">
 						<div class="row">
-					<div class="banner">
-						<a class="navbar-logo" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"></a>
-						<h1 class="tag"><?php $site_description = get_bloginfo( 'description', 'display' ); echo "$site_description";?></h1>
-					</div><!-- .banner -->
+						<div class="col-md-4">
+							<a class="navbar-brand" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"></a>
+						</div>
+						
+						<div class="col-xs-12 col-md-8">
+							<h1 class="tag"><?php $site_description = get_bloginfo( 'description', 'display' ); echo "$site_description";?></h1>
+						</div>
+					</div><!-- row -->
 				</div><!-- .container -->
-			</div><!-- row -->
+
 					<nav role="navigation">
 						<div class="navbar navbar-default navbar-top">
 							<div class="container">
