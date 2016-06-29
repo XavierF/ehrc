@@ -228,6 +228,8 @@ ul.rss-aggregator
 	margin-left: auto
 	margin-right: auto
 	text-align: center
+	clear: both
+
 
 #content
 	-webkit-font-smoothing: antialiased
@@ -244,10 +246,6 @@ ul.rss-aggregator
 	margin: 10px 0
 	padding-left: 10px
 	
-.gallery
-	display: block
-	h3, p
-		color: white
 
 .entry-content
 	-webkit-font-smoothing: antialiased
@@ -261,11 +259,22 @@ ul.rss-aggregator
 		color: $darkGrey
 		margin-bottom: 20px
 
-	img
-		display: inline-block
+	.alignleft
+		display: inline-block !important
 		float: left
 		margin-right: 10px
 		margin-bottom: 10px
+	.alignright
+		display: inline-block !important
+		float: right
+		margin-left: 10px
+		margin-bottom: 10px
+
+	.aligncenter
+		display: block
+		clear: both
+		margin: 0 auto 10px
+
 	ol, ul
 		li
 			padding: 0 30px 0 10px
@@ -283,6 +292,19 @@ ul.rss-aggregator
 	background: $lightGrey
 	margin-top: 80px
 	padding-top: 20px
+	ul
+		padding-left: 30px
+		li
+			list-style-type: square
+			a
+				font-size: 1em
+				font-family: "Roboto"
+
+.widgettitle
+	color: $darkBlue
+	font-family: "Roboto"
+	font-weight: 600
+	margin-left: 5px
 
 
 #full-width
@@ -800,6 +822,15 @@ ul.social
 			display: none
 		.btn
 			margin-bottom: 10px
+
+
+	#main
+		width: 66.66666667%
+		float: left
+
+	.sidebar
+		width: 33.33333333%
+		float: left
 
 
 @media screen and (min-width: 1200px)
