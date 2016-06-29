@@ -39,7 +39,7 @@
 							<a class="navbar-brand" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"></a>
 						</div>
 						
-						<div class="col-xs-12 col-md-8">
+						<div class="col-md-8">
 							<h1 class="tag"><?php $site_description = get_bloginfo( 'description', 'display' ); echo "$site_description";?></h1>
 						</div>
 					</div><!-- row -->
