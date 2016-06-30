@@ -10,7 +10,7 @@
 <section id="hero" role="hero-unit" class="container-fluid clearfix">
 	<div class="hero-background"></div>
 	
-				<div class="post container" role="main">
+				<div class="container" role="main">
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 						<header class="article-header">
@@ -75,18 +75,16 @@
 </section><!-- end services -->
 
 <section class="news clearfix">
-	
-	
 	<div class="container" role-"news">
 		<div class="section-header clearfix">
-		<h2>HUMAN RESOURCES IN THE NEWS</h2>
-	</div><!-- .section-header -->
+			<h2>HUMAN RESOURCES IN THE NEWS</h2>
+		</div><!-- .section-header -->
 
 		<!-- begin news feed here -->
 		<?php
 echo do_shortcode( '[wp_rss_aggregator limit="10" links_before=\'<ul class="rss-aggregator">\' link_before=\'<li class="feed-item-link">\']' );
 ?>
-	</div>
+	</div><!-- .container -->
 	
 </section><!-- end news -->
 
