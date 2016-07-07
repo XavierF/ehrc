@@ -7,7 +7,7 @@
 				<div id="inner-content" class="wrap clearfix">
 
 					<div id="main" class="eightcol first clearfix" role="main">
-						<h1 class="archive-title"><span><?php _e( 'Search Results for:', 'bonestheme' ); ?></span> <?php echo esc_attr(get_search_query()); ?></h1>
+						<h3 class="archive-title"><span><?php _e( 'Search Results for:', 'bonestheme' ); ?></span> <?php echo esc_attr(get_search_query()); ?></h3>
 
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -51,13 +51,24 @@
 
 									<article id="post-not-found" class="hentry clearfix">
 										<header class="article-header">
-											<h1><?php _e( 'Sorry, No Results.', 'bonestheme' ); ?></h1>
+											<h4><?php _e( 'Sorry, No Results Found. Please try your search again.', 'bonestheme' ); ?></h4>
 										</header>
 										<section class="entry-content">
-											<p><?php _e( 'Try your search again.', 'bonestheme' ); ?></p>
+											<form method="get" class="form-search" action="<?php echo home_url( '/' ); ?>">
+														<div class="row">
+															<div class="col-lg-12">
+																<div class="input-group">
+																	<input type="text" class="form-control search-query" name="s" placeholder="<?php esc_attr_e('Search &hellip;', 'bonestheme'); ?>" />
+																	<span class="input-group-btn">
+																		<button type="submit" class="btn btn-primary" name="submit" id="searchsubmit" value="<?php esc_attr_e('Go', 'bonestheme'); ?>">Search</button>
+																	</span>
+																</div>
+															</div>
+														</div>
+													</form>
+
 										</section>
 										<footer class="article-footer">
-												<p><?php _e( 'This is the error message in the search.php template.', 'bonestheme' ); ?></p>
 										</footer>
 									</article>
 

@@ -220,6 +220,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/library\/images\/facebook-join.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9810,
+		"inputAbbreviatedPath": "\/library\/images\/facebook-join.png",
+		"outputAbbreviatedPath": "\/library\/images\/facebook-join.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/library\/images\/facebook.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -231,6 +242,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/library\/images\/google-circles.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 11737,
+		"inputAbbreviatedPath": "\/library\/images\/google-circles.png",
+		"outputAbbreviatedPath": "\/library\/images\/google-circles.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/library\/images\/googleplus.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -238,6 +260,17 @@
 		"initialSize": 2038,
 		"inputAbbreviatedPath": "\/library\/images\/googleplus.png",
 		"outputAbbreviatedPath": "\/library\/images\/googleplus.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/library\/images\/linkedin-connect.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9659,
+		"inputAbbreviatedPath": "\/library\/images\/linkedin-connect.png",
+		"outputAbbreviatedPath": "\/library\/images\/linkedin-connect.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -260,6 +293,17 @@
 		"initialSize": 90928,
 		"inputAbbreviatedPath": "\/library\/images\/rtr-logo-300dpi.jpg",
 		"outputAbbreviatedPath": "\/library\/images\/rtr-logo-300dpi.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/library\/images\/twitter-follow.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9271,
+		"inputAbbreviatedPath": "\/library\/images\/twitter-follow.png",
+		"outputAbbreviatedPath": "\/library\/images\/twitter-follow.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1251,6 +1295,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/page-gallery.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/page-news.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/page-news.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

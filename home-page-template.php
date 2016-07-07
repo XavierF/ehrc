@@ -59,14 +59,14 @@
 			<div class="card col-lg-4">
 				<h4 class="card-header"><a href="<?php the_field('service_2_page'); ?>"><?php the_field('service_2_title'); ?></a></h4>
 				<p class="service-excerpt"><?php the_field('service_2_excerpt'); ?></p>	
-				<a href="<?php the_field('service_1_page'); ?>" class="btn btn-primary btn-lg">LEARN MORE</a>
+				<a href="<?php the_field('service_2_page'); ?>" class="btn btn-primary btn-lg">LEARN MORE</a>
 			</div>
 				
 			
 			<div class="card col-lg-4">
 				<h4 class="card-header"><a href="<?php the_field('service_3_page'); ?>"><?php the_field('service_3_title'); ?></a></h4>
 				<p class="service-excerpt"><?php the_field('service_3_excerpt'); ?></p>	
-				<a href="<?php the_field('service_1_page'); ?>" class="btn btn-primary btn-lg">LEARN MORE</a>
+				<a href="<?php the_field('service_3_page'); ?>" class="btn btn-primary btn-lg">LEARN MORE</a>
 			</div>
 				
 		</row>

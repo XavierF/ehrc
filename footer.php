@@ -1,4 +1,4 @@
-<div class="push"></div>
+
 </div> <!-- end .wrapper -->
 			
 			<!-- <div class="visible-xs">
@@ -10,7 +10,7 @@
 					<h3>Richard Rossignol</h3>
 					<ul class="phone">
 						<li><a href="tel:+18054932136">Office: 805.493.2136</a></li>
-						<li>|</li>
+						<li class="hidden-xs">|</li>
 						<li><a href="tel:+18053687128">Cell: 805.368.7128</a></li>
 					</ul>
 
@@ -20,7 +20,7 @@
 						<li><a href="https://www.linkedin.com/in/rossignol" title="Connect with me on LinkedIn" class="linkedin" target="_blank"></a></li>
 						<li><a href="https://www.facebook.com/RTR-Consulting-126585527053/" class="facebook" title="Find me on Facebook" target="_blank"></a></li>
 						<li><a href="https://twitter.com/RickRossignol" class="twitter" title="Follow me on Twitter" target="_blank"></a></li>
-						<li><a href="https://plus.google.com/u/0/+RickRossignolHRExperts/posts" title="Google+" class="googleplus" target="_blank"></a></li>
+						<li><a href="https://plus.google.com/u/0/+RickRossignolHRExperts/posts" title="Google+ Add to Circles" class="googleplus" target="_blank"></a></li>
 					</ul>
 
 					
