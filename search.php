@@ -53,21 +53,11 @@
 										<header class="article-header">
 											<h4><?php _e( 'Sorry, No Results Found. Please try your search again.', 'bonestheme' ); ?></h4>
 										</header>
-										<section class="entry-content">
-											<form method="get" class="form-search" action="<?php echo home_url( '/' ); ?>">
-														<div class="row">
-															<div class="col-lg-12">
-																<div class="input-group">
-																	<input type="text" class="form-control search-query" name="s" placeholder="<?php esc_attr_e('Search &hellip;', 'bonestheme'); ?>" />
-																	<span class="input-group-btn">
-																		<button type="submit" class="btn btn-primary" name="submit" id="searchsubmit" value="<?php esc_attr_e('Go', 'bonestheme'); ?>">Search</button>
-																	</span>
-																</div>
-															</div>
-														</div>
-													</form>
+									<section class="search">
 
-										</section>
+											<p><?php get_search_form(); ?></p>
+
+									</section> <!-- end search section -->
 										<footer class="article-footer">
 										</footer>
 									</article>

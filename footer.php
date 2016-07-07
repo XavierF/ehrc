@@ -1,4 +1,3 @@
-
 </div> <!-- end .wrapper -->
 			
 			<!-- <div class="visible-xs">
@@ -28,13 +27,13 @@
 				</div> <!-- end .container -->
 
 				<div id="inner-footer" class="wrap clearfix">
-					<div class="container">
+					<div class="container-fluid">
 					<nav role="navigation">
 							<?php bones_footer_links(); ?>
 					</nav>
 
 					<p class="source-org copyright">Copyright &copy; 2009 - <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.  All Rights Reserved.</p>
-					</div> <!-- end .container -->
+					</div> <!-- end .container-fluid-->
 
 				</div> <!-- end #inner-footer -->
 

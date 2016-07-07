@@ -392,89 +392,35 @@ ul.rss-aggregator
 	text-align: left
 .article-footer
 	padding-left: 10px
+//----------------------------------- SEARCH PAGE ----------------------------//
 
+.search-no-results
+	.archive-title
+		margin-top: 20px 
+		margin-bottom: 30px
+		text-align: left !important
+	#main
+		padding-right: 100px
+	.search
+		padding-top: 20px
+	#search-2
+		display: none
 
-// FOOTER
+	.sidebar
+		margin-top: 30px 
 
-.footer
-	background: white
-	margin-top: 0
-	border-top: 0
-	padding: 0
-.contact
-	text-align: center
-	padding: 10px 0
-	h3
-		color: $darkBlue
-	a
-		font-size: 1.2em
-ul.phone
-	li
-		display: inline-block
-ul.social
-	li
-		display: inline-block
+.page-template-page-search
+	.archive-title
+		margin-top: 30px 
+		margin-bottom: 30px
+		text-align: left !important
+	.sidebar
+		margin-top: 30px
+	#search-2
+		display: none
+	#main
+		padding-right: 40px
 
-#inner-footer
-	background: $darkBlue
-	text-align: center
-	padding: 10px 0
-	a
-		font-size: 1.3em
-
-	
-.source-org
-	margin-bottom: 20px
-	color: white
-.footer-nav
-	display: block
-	float: none
-	margin: 20px auto 
-	a
-		color: white
-		padding: 0 7px 
-		font-size: 1em !important
-.phone
-	padding-left: 0
-	li
-		a 
-			padding: 0 10px
-
-.social
-	height: 30px
-	padding-left: 0
-	margin-top: 10px
-	.linkedin
-		height: 25px
-		width: 25px
-		margin: 0 15px
-		display: inline-block
-		background: url('../images/linkedin.png') center  center no-repeat
-		background-size: 24px 24px
-
-	.twitter
-		height: 25px
-		width: 25px
-		margin: 0 15px
-		display: inline-block
-		background: url('../images/twitter.png') center  center no-repeat
-		background-size: 24px 24px
-
-	.facebook
-		height: 25px
-		width: 25px
-		margin: 0 15px
-		display: inline-block
-		background: url('../images/facebook.png') center  center no-repeat
-		background-size: 24px 24px
-
-	.googleplus
-		height: 25px
-		width: 25px
-		margin: 0 15px
-		display: inline-block
-		background: url('../images/googleplus.png') center  center no-repeat
-		background-size: 24px 24px
 
 //---------------------------------------- Contact Page Social Icons ------------------------------//
 
@@ -542,6 +488,93 @@ ul.social
 	float: right
 	font-size: 1em !important
 	font-weight: normal !important
+
+
+// FOOTER
+
+.footer
+	background: white
+	margin-top: 0
+	border-top: 0
+	padding: 0
+.contact
+	text-align: center
+	padding: 10px 0
+	h3
+		color: $darkBlue
+	a
+		font-size: 1.2em
+ul.phone
+	li
+		display: inline-block
+ul.social
+	li
+		display: inline-block
+
+#inner-footer
+	background: $darkBlue
+	text-align: center
+	padding: 10px 0
+	a
+		font-size: 1.3em
+
+	
+.source-org
+	margin-bottom: 20px
+	color: white
+.footer-nav
+	display: block
+	float: none
+	margin: 20px auto 
+	a
+		color: white
+		padding: 0 7px 
+		font-size: 1em !important
+.phone
+	padding-left: 0
+	li
+		a 
+			padding: 0 10px
+	.hidden-xs
+		display: inline-block !important
+
+.social
+	height: 30px
+	padding-left: 0
+	margin-top: 10px
+	.linkedin
+		height: 25px
+		width: 25px
+		margin: 0 15px
+		display: inline-block
+		background: url('../images/linkedin.png') center  center no-repeat
+		background-size: 24px 24px
+
+	.twitter
+		height: 25px
+		width: 25px
+		margin: 0 15px
+		display: inline-block
+		background: url('../images/twitter.png') center  center no-repeat
+		background-size: 24px 24px
+
+	.facebook
+		height: 25px
+		width: 25px
+		margin: 0 15px
+		display: inline-block
+		background: url('../images/facebook.png') center  center no-repeat
+		background-size: 24px 24px
+
+	.googleplus
+		height: 25px
+		width: 25px
+		margin: 0 15px
+		display: inline-block
+		background: url('../images/googleplus.png') center  center no-repeat
+		background-size: 24px 24px
+
+
 
 
 // MEDIA QUERIES
@@ -686,18 +719,10 @@ ul.social
 			font-size: 1.2em
 
 
-//----------------------------------- SEARCH PAGE ----------------------------//
-
-.search
-	.archive-title
-		margin-top: 20px 
-		margin-bottom: 30px
-		text-align: left !important
 
 	.sidebar
 		margin-top: 30px 
 
-//----------------------------------- CONTACT PAGE ----------------------------//
 
 	.connect-phone
 		margin-top: 10px
@@ -708,7 +733,7 @@ ul.social
 			display: block !important
 			&:nth-child(1)
 				a
-					padding-left: 10px
+					padding-left: 0
 			a
 				padding: 0 10px
 				display: block !important
@@ -758,6 +783,14 @@ ul.social
 
 	.footer
 		text-align: center
+
+	.phone
+		li
+			display: block !important
+			text-align: center !important
+			padding: 5px !important
+		.hidden-xs
+			display: none !important
 
 	.footer-nav
 		float: none
@@ -911,6 +944,15 @@ ul.social
 			a
 				color: white !important
 				font-weight: 100 !important
+
+	.search-no-results
+		#main
+			padding: 0 !important
+		#search-2
+			display: none
+	.page-template-page-search
+		#main
+			padding: 0 !important
 
 
 	
