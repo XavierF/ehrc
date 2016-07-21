@@ -66,7 +66,7 @@
 			<div class="card col-lg-4">
 				<h4 class="card-header"><a href="<?php the_field('service_3_page'); ?>"><?php the_field('service_3_title'); ?></a></h4>
 				<p class="service-excerpt"><?php the_field('service_3_excerpt'); ?></p>	
-				<a href="<?php the_field('service_3_page'); ?>" class="btn btn-primary btn-lg">LEARN MORE</a>
+				<a href="http://newehrc.dreamhosters.com/wp-content/uploads/2016/07/RTR-BROCHURE-lowres-for-web-email.pdf" class="btn btn-primary btn-lg" target="_blank">LEARN MORE</a>
 			</div>
 				
 		</row>

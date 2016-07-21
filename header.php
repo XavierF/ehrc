@@ -48,7 +48,7 @@
 
 					<nav role="navigation">
 						<div class="navbar navbar-default navbar-top">
-							<div class="container">
+							<div class="container-fluid">
 								<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
 							
 									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
@@ -59,7 +59,7 @@
 							<div class="navbar-collapse collapse navbar-responsive-collapse">
 									<?php bones_main_nav(); ?>
 								</div><!-- end .navbar-collapse -->
-								</div><!-- .container-->
+								</div><!-- .container-fluid-->
 						</div> <!-- end .navbar navbar-default navbar-fixed-top -->
 					</nav>
 				</header> <!-- end header -->
