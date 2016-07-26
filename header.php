@@ -41,7 +41,7 @@
 						</div>
 						
 						<div class="col-md-8">
-							<h1 class="tag"><?php $site_description = get_bloginfo( 'description', 'display' ); echo "$site_description";?></h1>
+							<h1 class="tag-line"><?php $site_description = get_bloginfo( 'description', 'display' ); echo "$site_description";?></h1>
 						</div>
 					</div><!-- row -->
 				</div><!-- .container -->

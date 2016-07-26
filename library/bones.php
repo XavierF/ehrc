@@ -311,11 +311,12 @@ function bones_related_posts() {
      	);
         $related_posts = get_posts( $args );
         if($related_posts) {
+        	echo '<h4 class="relate">Related Posts</h4>';
         	foreach ( $related_posts as $post ) : setup_postdata( $post ); ?>
 	           	<li class="related_post"><a class="entry-unrelated" href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></li>
 	        <?php endforeach; }
 	    else { ?>
-            <?php echo '<li class="no_related_post">' . __( 'No Related Posts Yet!', 'bonestheme' ) . '</li>'; ?>
+            <?php echo '<li class="no_related_post">' . __( '', 'bonestheme' ) . '</li>'; ?>
 		<?php }
 	}
 	wp_reset_query();

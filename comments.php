@@ -19,21 +19,21 @@ The comments page for Bones
 <!-- You can start editing here. -->
 
 <?php if ( have_comments() ) : ?>
-	<h3 id="comments" class="h2"><?php comments_number( __( '<span>No</span> Responses', 'bonestheme' ), __( '<span>One</span> Response', 'bonestheme' ), _n( '<span>%</span> Response', '<span>%</span> Responses', get_comments_number(), 'bonestheme' ) );?> to &#8220;<?php the_title(); ?>&#8221;</h3>
+	<h4 id="comments" class="relate"><?php comments_number( __( '<span>No</span> Responses', 'bonestheme' ), __( '<span>One</span> Response', 'bonestheme' ), _n( '<span>%</span> Response', '<span>%</span> Responses', get_comments_number(), 'bonestheme' ) );?> to &#8220;<?php the_title(); ?>&#8221;</h4>
 
 	<nav id="comment-nav">
-		<ul class="clearfix">
+		<ul class="list-unstyled clearfix">
 				<li><?php previous_comments_link() ?></li>
 				<li><?php next_comments_link() ?></li>
 		</ul>
 	</nav>
 
-	<ol class="commentlist">
+	<ol class="commentlist list-unstyled">
 		<?php wp_list_comments( 'type=comment&callback=bones_comments' ); ?>
 	</ol>
 
 	<nav id="comment-nav">
-		<ul class="clearfix">
+		<ul class="clearfix list-unstyled">
 				<li><?php previous_comments_link() ?></li>
 				<li><?php next_comments_link() ?></li>
 		</ul>
@@ -58,7 +58,7 @@ The comments page for Bones
 
 <section id="respond" class="respond-form">
 
-	<h3 id="comment-form-title" class="h2"><?php comment_form_title( __( 'Leave a Reply', 'bonestheme' ), __( 'Leave a Reply to %s', 'bonestheme' )); ?></h3>
+	<h4 id="comment-form-title" class="relate"><?php comment_form_title( __( 'Leave a Reply', 'bonestheme' ), __( 'Leave a Reply to %s', 'bonestheme' )); ?></h4>
 
 	<div id="cancel-comment-reply">
 		<p class="small"><?php cancel_comment_reply_link(); ?></p>
@@ -78,29 +78,29 @@ The comments page for Bones
 
 	<?php else : ?>
 
-	<ul id="comment-form-elements" class="clearfix">
+	<ul id="comment-form-elements" class="form-group clearfix">
 
 		<li>
 			<label for="author"><?php _e( 'Name', 'bonestheme' ); ?> <?php if ($req) _e( '(required)'); ?></label>
-			<input type="text" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" placeholder="<?php _e( 'Your Name*', 'bonestheme' ); ?>" tabindex="1" <?php if ($req) echo "aria-required='true'"; ?> />
+			<input type="text" class="form-control" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" placeholder="<?php _e( 'Your Name*', 'bonestheme' ); ?>" tabindex="1" <?php if ($req) echo "aria-required='true'"; ?> />
 		</li>
 
 		<li>
 			<label for="email"><?php _e( 'Mail', 'bonestheme' ); ?> <?php if ($req) _e( '(required)'); ?></label>
-			<input type="email" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" placeholder="<?php _e( 'Your E-Mail*', 'bonestheme' ); ?>" tabindex="2" <?php if ($req) echo "aria-required='true'"; ?> />
+			<input type="email" class="form-control" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" placeholder="<?php _e( 'Your E-Mail*', 'bonestheme' ); ?>" tabindex="2" <?php if ($req) echo "aria-required='true'"; ?> />
 			<small><?php _e("(will not be published)", 'bonestheme' ); ?></small>
 		</li>
 
 		<li>
 			<label for="url"><?php _e( 'Website', 'bonestheme' ); ?></label>
-			<input type="url" name="url" id="url" value="<?php echo esc_attr($comment_author_url); ?>" placeholder="<?php _e( 'Got a website?', 'bonestheme' ); ?>" tabindex="3" />
+			<input type="url" class="form-control"name="url" id="url" value="<?php echo esc_attr($comment_author_url); ?>" placeholder="<?php _e( 'Got a website?', 'bonestheme' ); ?>" tabindex="3" />
 		</li>
 
 	</ul>
 
 	<?php endif; ?>
 
-	<p><textarea name="comment" id="comment" placeholder="<?php _e( 'Your Comment here...', 'bonestheme' ); ?>" tabindex="4"></textarea></p>
+	<p><textarea class="form-control" name="comment" id="comment" placeholder="<?php _e( 'Your Comment here...', 'bonestheme' ); ?>" tabindex="4"></textarea></p>
 
 	<p>
 		<input name="submit" type="submit" id="submit" class="btn btn-primary" tabindex="5" value="<?php _e( 'Submit', 'bonestheme' ); ?>" />

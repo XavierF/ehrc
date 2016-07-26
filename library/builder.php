@@ -152,7 +152,7 @@ function builder_numbered_pages_loop($start, $max, $page = 0) {
 function builder_breadcrumb_lists() {
 
     $chevron = '<span class="divider">/</span>';
-    $name = __('Home','bonestheme'); //text for the 'Home' link
+    $name = __('HOME','bonestheme'); //text for the 'Home' link
     $currentBefore = '<li class="active">';
     $currentAfter = '</li>';
 
